@@ -1,6 +1,7 @@
 <template>
   <div>
     <HomeSection />
+    <SolutionSection />
     <BusinessSection />
     <TeamSection />
     <ContactSection />

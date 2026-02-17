@@ -51,6 +51,7 @@
   
   const navItems = [
     { id: 'home', label: 'Home' },
+    { id: 'solution', label: 'Solution' },
     { id: 'business', label: 'Business' },
     { id: 'team', label: 'Team' },
     { id: 'contact', label: 'Contact' }

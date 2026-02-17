@@ -16,9 +16,9 @@
       </p>
       <div class="mt-10 flex flex-wrap justify-center gap-4">
         <a
-          href="#business"
+          href="#solution"
           class="rounded-lg bg-blue-600 px-6 py-3 text-sm font-medium text-white transition hover:bg-blue-500"
-          @click.prevent="scrollTo('business')"
+          @click.prevent="scrollTo('solution')"
         >
           Discover
         </a>
