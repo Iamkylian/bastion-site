@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   srcDir: 'app',
 
   app: {
-    baseURL: '/bastion/',
+    baseURL: '/bastion-site/',
     head: {
       title: 'Bastion',
       meta: [
