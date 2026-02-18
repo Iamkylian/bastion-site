@@ -13,6 +13,13 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ],
+      script: [
+        {
+          defer: true,
+          src: 'https://cloud.umami.is/script.js',
+          'data-website-id': '0661da96-0120-443f-b7bc-6f1176aedbbd'
+        }
+      ]
     }
   },
 
