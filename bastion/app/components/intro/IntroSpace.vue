@@ -110,7 +110,7 @@ onUnmounted(() => {
   border-radius: 50%;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04), 0 0 120px 50px rgba(255, 255, 255, 0.06);
   transform: scale(0);
-  animation: intro-glow-scale 2.8s ease-in-out 1.1s forwards;
+  animation: intro-glow-scale 2.5s ease-in-out 1.1s forwards;
   pointer-events: none;
 }
 
@@ -134,7 +134,7 @@ onUnmounted(() => {
   text-transform: uppercase;
   margin: 0;
   opacity: 0;
-  animation: intro-text-in 3.5s ease-out 0.25s forwards;
+  animation: intro-text-in 3.8s ease-out 0.25s forwards;
 }
 
 @keyframes intro-text-in {
