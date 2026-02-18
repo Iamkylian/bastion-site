@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   srcDir: 'app',
 
   app: {
-    baseURL: '/',
+    baseURL: '/bastion/',
     head: {
       title: 'Bastion',
       meta: [
@@ -30,6 +30,6 @@ export default defineNuxtConfig({
   ],
 
   nitro: {
-    preset: 'static'
+    preset: 'github_pages'
   }
 })
