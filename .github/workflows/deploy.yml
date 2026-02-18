@@ -33,12 +33,15 @@ jobs:
         with:
           node-version: '22'
           cache: 'pnpm'
+          cache-dependency-path: 'bastion/pnpm-lock.yaml'
 
       - name: Install dependencies
         run: pnpm install  # ← SANS frozen-lockfile
+        working-directory: bastion
 
       - name: Build static site
         run: pnpm build
+        working-directory: bastion
         env:
           NITRO_PRESET: github_pages
 
