@@ -1,5 +1,17 @@
 <template>
+
   <div class="business-timeline">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
+            Roadmap
+          </h2>
+          <div class="mx-auto mt-4 h-1 w-24 bg-gradient-to-r from-[#000091] via-white to-[#e1000f]"></div>
+          <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto">
+            From prototype to European leadership — our 11-year journey
+          </p>
+        </div>
+
+
     <div class="timeline-container" ref="timelineContainer">
       <!-- Vertical center line -->
       <div class="timeline-line"></div>
