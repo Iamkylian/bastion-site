@@ -26,7 +26,7 @@
   const MOUSE_FORCE = 0.015
   
   const ACCENT = { r: 13, g: 148, b: 136 }
-  const PRIMARY = { r: 43, g: 56, b: 64 }
+  const PRIMARY = { r: 60, g: 80, b: 100 }
   
   let nodes: Node[] = []
   let rafId = 0
@@ -42,7 +42,7 @@
         vx: (Math.random() - 0.5) * 0.35,
         vy: (Math.random() - 0.5) * 0.35,
         radius: 1.5 + Math.random() * 1.5,
-        baseOpacity: 0.25 + Math.random() * 0.35,
+        baseOpacity: 0.35 + Math.random() * 0.4,
       })
     }
   }
@@ -101,7 +101,7 @@
         const dy = a.y - b.y
         const dist = Math.sqrt(dx * dx + dy * dy)
         if (dist < CONNECTION_DIST) {
-          const alpha = (1 - dist / CONNECTION_DIST) * 0.18
+          const alpha = (1 - dist / CONNECTION_DIST) * 0.24
   
           let nearMouse = false
           if (mouse.active) {
@@ -116,7 +116,7 @@
             ctx.lineWidth = 1.2
           } else {
             ctx.strokeStyle = `rgba(${PRIMARY.r}, ${PRIMARY.g}, ${PRIMARY.b}, ${alpha})`
-            ctx.lineWidth = 0.8
+            ctx.lineWidth = 0.9
           }
   
           ctx.beginPath()
