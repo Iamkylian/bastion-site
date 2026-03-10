@@ -35,6 +35,8 @@
 </template>
 
 <script setup lang="ts">
+import NetworkCanvas from '~/components/NetworkCanvas.vue'
+
 function scrollTo (id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 }
