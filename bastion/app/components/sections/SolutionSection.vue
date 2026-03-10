@@ -45,7 +45,7 @@
           <p class="mt-1 text-xs text-slate-500">Full RF spectrum surveillance</p>
         </div>
         <div class="rounded-lg border border-slate-800 bg-slate-900/40 p-6 text-center">
-          <div class="text-4xl font-bold text-white">0s</div>
+          <div class="text-4xl font-bold text-white">2s</div>
           <div class="mt-2 text-sm uppercase tracking-wider text-slate-400">Latency</div>
           <p class="mt-1 text-xs text-slate-500">Real-time countermeasures</p>
         </div>
