@@ -2,11 +2,11 @@
 
   <div class="business-timeline">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
+          <h2 class="text-4xl font-bold tracking-tight text-primary sm:text-5xl md:text-6xl">
             Roadmap
           </h2>
-          <div class="mx-auto mt-4 h-1 w-24 bg-gradient-to-r from-[#000091] via-white to-[#e1000f]"></div>
-          <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto">
+          <div class="mx-auto mt-4 h-1 w-24 bg-gradient-to-r from-[#000091] via-[#B8BFC8] to-[#e1000f]"></div>
+          <p class="mt-6 text-lg text-texte-muted max-w-2xl mx-auto">
             From prototype to European leadership — our 11-year journey
           </p>
         </div>
@@ -375,7 +375,7 @@ export default {
   transform: translateX(-50%);
   width: 3px;
   height: 100%;
-  background: linear-gradient(180deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+  background: linear-gradient(180deg, #1565C0 0%, #0D9488 50%, #2B3840 100%);
   z-index: 1;
 }
 
@@ -410,53 +410,52 @@ export default {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #3b82f6;
+  background: #1565C0;
   transition: all 0.3s ease;
   z-index: 3;
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 0 0 4px rgba(21, 101, 192, 0.15);
 }
 
 .timeline-step.active .step-dot {
   transform: scale(1.5);
-  box-shadow: 0 0 0 8px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 0 0 8px rgba(21, 101, 192, 0.2);
 }
 
-/* Phase type colors */
-.step-dot.prototype { background: #10b981; }
-.step-dot.integration { background: #f59e0b; }
-.step-dot.demonstrator { background: #f59e0b; }
-.step-dot.institutional { background: #8b5cf6; }
-.step-dot.newspace { background: #ec4899; }
-.step-dot.commercial { background: #ef4444; }
-.step-dot.growth { background: #14b8a6; }
-.step-dot.consolidation { background: #6366f1; }
-.step-dot.megaconstellation { background: #a855f7; }
-.step-dot.deployment { background: #06b6d4; }
-.step-dot.leader { background: #f97316; } 
+.step-dot.prototype { background: #0D9488; }
+.step-dot.integration { background: #D97706; }
+.step-dot.demonstrator { background: #D97706; }
+.step-dot.institutional { background: #7C3AED; }
+.step-dot.newspace { background: #DB2777; }
+.step-dot.commercial { background: #DC2626; }
+.step-dot.growth { background: #0D9488; }
+.step-dot.consolidation { background: #4F46E5; }
+.step-dot.megaconstellation { background: #7C3AED; }
+.step-dot.deployment { background: #0891B2; }
+.step-dot.leader { background: #EA580C; }
 
 .step-year {
   margin-top: 8px;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #64748b;
+  color: #5E6B77;
 }
 
 .step-content {
   flex: 1;
   max-width: 450px;
   padding: 24px;
-  background: rgba(255, 255, 255, 0.95);
+  background: #F0F2F5;
   backdrop-filter: blur(10px);
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   margin-left: 40px;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid #B8BFC8;
 }
 
 .timeline-step.active .step-content {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-  border-color: #3b82f6;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border-color: #1565C0;
 }
 
 .step-header {
@@ -466,7 +465,7 @@ export default {
 .step-phase {
   display: inline-block;
   padding: 4px 12px;
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(135deg, #1565C0, #0D9488);
   color: white;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -477,7 +476,7 @@ export default {
 
 .step-title {
   margin: 8px 0 0 0;
-  color: #0f172a;
+  color: #171E26;
   font-size: 1.4rem;
   font-weight: 700;
 }
@@ -485,9 +484,9 @@ export default {
 .revenue-data {
   margin: 16px 0;
   padding: 16px;
-  background: #f8fafc;
+  background: #E8EBEF;
   border-radius: 12px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #D0D6DC;
 }
 
 .revenue-row {
@@ -495,7 +494,7 @@ export default {
   justify-content: space-between;
   padding: 6px 0;
   font-size: 0.95rem;
-  border-bottom: 1px dashed #e2e8f0;
+  border-bottom: 1px dashed #D0D6DC;
 }
 
 .revenue-row:last-child {
@@ -505,24 +504,24 @@ export default {
 .revenue-row.total {
   margin-top: 6px;
   padding-top: 10px;
-  border-top: 2px solid #cbd5e1;
+  border-top: 2px solid #B8BFC8;
   font-weight: 700;
-  color: #0f172a;
+  color: #171E26;
 }
 
 .revenue-row.software-percent {
-  color: #2563eb;
+  color: #1565C0;
   font-weight: 500;
 }
 
 .revenue-label {
-  color: #475569;
+  color: #5E6B77;
 }
 
 .revenue-value {
   font-family: monospace;
   font-weight: 600;
-  color: #0f172a;
+  color: #171E26;
 }
 
 .gantt-preview {
@@ -531,7 +530,7 @@ export default {
 
 .gantt-bar {
   height: 6px;
-  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(90deg, #1565C0, #0D9488);
   border-radius: 3px;
   transition: width 0.3s ease;
 }
@@ -551,23 +550,22 @@ export default {
   letter-spacing: 0.3px;
 }
 
-.badge.technical { background: #dbeafe; color: #1e40af; }
-.badge.commercial { background: #dcfce7; color: #166534; }
-.badge.market { background: #fef3c7; color: #92400e; }
-.badge.client { background: #f3e8ff; color: #6b21a8; }
-.badge.structure { background: #ffe4e6; color: #9f1239; }
-.badge.business { background: #cffafe; color: #155e75; }
-.badge.milestone { background: #f1f5f9; color: #334155; }
-.badge.phase { background: #ede9fe; color: #5b21b6; }
+.badge.technical { background: #E0F2FE; color: #0C4A6E; }
+.badge.commercial { background: #DCFCE7; color: #166534; }
+.badge.market { background: #FEF3C7; color: #92400E; }
+.badge.client { background: #F3E8FF; color: #6B21A8; }
+.badge.structure { background: #FFE4E6; color: #9F1239; }
+.badge.business { background: #CCFBF1; color: #0F766E; }
+.badge.milestone { background: #F1F5F9; color: #2B3840; }
+.badge.phase { background: #EDE9FE; color: #5B21B6; }
 
 .step-description {
   margin: 12px 0 0 0;
-  color: #475569;
+  color: #5E6B77;
   line-height: 1.5;
   font-size: 0.95rem;
 }
 
-/* Alternating layout */
 .timeline-step:nth-child(even) .step-content {
   margin-left: auto;
   margin-right: 40px;
@@ -586,7 +584,6 @@ export default {
   flex-direction: row-reverse;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .timeline-line {
     left: 40px;
@@ -620,7 +617,6 @@ export default {
   }
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }

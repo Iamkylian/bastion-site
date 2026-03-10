@@ -30,11 +30,9 @@ function onIntroEnd () {
 <style>
 .app-root {
   min-height: 100vh;
-  /* Même fond que l'intro : pas de flash avant le premier paint */
-  background: #030304;
+  background: #E8EBEF;
 }
 
-/* Masqué tant que l'intro est affichée, puis fondu d'entrée */
 .app-content {
   opacity: 0;
   pointer-events: none;

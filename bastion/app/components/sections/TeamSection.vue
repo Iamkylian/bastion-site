@@ -1,13 +1,13 @@
 <template>
   <section
     id="team"
-    class="scroll-mt-20 border-b border-slate-800/60 bg-slate-950 px-4 py-20 sm:px-6 sm:py-24 lg:px-8"
+    class="scroll-mt-20 border-b border-bordure bg-fond px-4 py-20 sm:px-6 sm:py-24 lg:px-8"
   >
     <div class="mx-auto max-w-6xl">
-      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+      <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
         Team
       </h2>
-      <p class="mt-4 max-w-2xl text-slate-400">
+      <p class="mt-4 max-w-2xl text-texte-muted">
         Get to know the team behind Bastion.
       </p>
       <ul class="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
@@ -16,14 +16,14 @@
           :key="i"
           class="flex flex-col items-center text-center"
         >
-          <p class="text-lg font-semibold text-white truncate">
+          <p class="text-lg font-semibold text-primary truncate">
             {{ member.name }}
           </p>
-          <p class="mt-0.5 text-sm text-slate-500">
+          <p class="mt-0.5 text-sm text-texte-faint">
             {{ member.role }}
           </p>
           <div
-            class="mt-3 aspect-square w-full max-w-[200px] overflow-hidden rounded-lg border border-slate-700 bg-slate-800"
+            class="mt-3 aspect-square w-full max-w-[200px] overflow-hidden rounded-lg border border-bordure bg-fond-alt"
           >
             <img
               v-if="member.photo"
@@ -33,7 +33,7 @@
             >
             <div
               v-else
-              class="flex size-full items-center justify-center text-slate-600"
+              class="flex size-full items-center justify-center text-bordure-dark"
               aria-hidden
             >
               <svg class="size-12" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -66,4 +66,3 @@ const team = computed(() =>
   }))
 )
 </script>
-  

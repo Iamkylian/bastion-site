@@ -1,18 +1,18 @@
 <template>
-    <footer class="border-t border-slate-800 bg-slate-900/50">
+    <footer class="border-t border-bordure bg-fond-alt/50">
       <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
         <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div class="text-center md:text-left">
-            <span class="font-semibold text-white">Bastion</span>
-            <p class="mt-1 text-sm text-slate-500">
+            <span class="font-semibold text-primary">Bastion</span>
+            <p class="mt-1 text-sm text-texte-faint">
               Defence & space
             </p>
           </div>
-          <ul class="flex flex-wrap justify-center gap-6 text-sm text-slate-400">
+          <ul class="flex flex-wrap justify-center gap-6 text-sm text-texte-muted">
             <li v-for="item in navItems" :key="item.id">
               <a
                 :href="`#${item.id}`"
-                class="transition hover:text-white"
+                class="transition hover:text-primary"
                 @click.prevent="scrollTo(item.id)"
               >
                 {{ item.label }}
@@ -20,7 +20,7 @@
             </li>
           </ul>
         </div>
-        <div class="mt-8 border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
+        <div class="mt-8 border-t border-bordure pt-8 text-center text-sm text-texte-faint">
           © {{ new Date().getFullYear() }} Bastion. All rights reserved.
         </div>
       </div>
@@ -40,4 +40,3 @@
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
   </script>
-  
