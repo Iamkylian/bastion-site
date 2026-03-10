@@ -1,7 +1,7 @@
 <template>
   <section
     id="solution"
-    class="scroll-mt-20 border-b border-slate-800/60 bg-slate-900/30 px-4 py-20 sm:px-6 sm:py-24 lg:px-8"
+    class="scroll-mt-20 px-4 py-20 sm:px-6 sm:py-24 lg:px-8"
   >
     <div class="mx-auto max-w-6xl">
       <!-- Header minimal -->

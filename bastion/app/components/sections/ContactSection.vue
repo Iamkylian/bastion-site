@@ -1,7 +1,7 @@
 <template>
     <section
       id="contact"
-      class="scroll-mt-20 bg-slate-900/30 px-4 py-20 sm:px-6 sm:py-24 lg:px-8"
+      class="scroll-mt-20 px-4 py-20 sm:px-6 sm:py-24 lg:px-8"
     >
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">

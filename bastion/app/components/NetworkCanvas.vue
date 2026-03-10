@@ -20,7 +20,7 @@
   const canvasRef = ref<HTMLCanvasElement | null>(null)
   const mouse = reactive({ x: -9999, y: -9999, active: false })
   
-  const NODE_COUNT = 90
+  const NODE_COUNT = 250
   const CONNECTION_DIST = 160
   const MOUSE_RADIUS = 200
   const MOUSE_FORCE = 0.015
@@ -96,6 +96,7 @@
       for (let j = i + 1; j < nodes.length; j++) {
         const a = nodes[i]
         const b = nodes[j]
+        if (!a || !b) continue
         const dx = a.x - b.x
         const dy = a.y - b.y
         const dist = Math.sqrt(dx * dx + dy * dy)

@@ -1,5 +1,5 @@
 <template>
-    <footer class="border-t border-slate-800 bg-slate-900/50">
+    <footer class="border-t border-slate-800/30 bg-slate-900/20">
       <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
         <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div class="text-center md:text-left">
@@ -20,7 +20,7 @@
             </li>
           </ul>
         </div>
-        <div class="mt-8 border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
+        <div class="mt-8 border-t border-slate-800/30 pt-8 text-center text-sm text-slate-500">
           © {{ new Date().getFullYear() }} Bastion. All rights reserved.
         </div>
       </div>
