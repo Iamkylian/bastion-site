@@ -9,6 +9,7 @@
       :class="{ 'app-content--visible': !showIntro }"
       :aria-hidden="showIntro"
     >
+      <NetworkCanvas class="app-network-bg" />
       <NuxtRouteAnnouncer />
       <NuxtLayout>
         <NuxtPage />
@@ -19,6 +20,7 @@
 
 <script setup lang="ts">
 import IntroAnimation from '~/components/IntroAnimation.vue'
+import NetworkCanvas from '~/components/NetworkCanvas.vue'
 
 const showIntro = ref(true)
 
@@ -44,5 +46,12 @@ function onIntroEnd () {
 .app-content--visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+.app-network-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
 }
 </style>

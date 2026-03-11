@@ -1,9 +1,7 @@
 <template>
     <canvas
       ref="canvasRef"
-      class="pointer-events-auto absolute inset-0 h-full w-full"
-      @mousemove="onMouseMove"
-      @mouseleave="onMouseLeave"
+      class="pointer-events-none absolute inset-0 h-full w-full"
     />
   </template>
   
@@ -42,7 +40,7 @@
         vx: (Math.random() - 0.5) * 0.35,
         vy: (Math.random() - 0.5) * 0.35,
         radius: 1.5 + Math.random() * 1.5,
-        baseOpacity: 0.35 + Math.random() * 0.4,
+        baseOpacity: 0.35  + Math.random() * 0.4,
       })
     }
   }
@@ -156,25 +154,25 @@
   }
   
   function onMouseMove (e: MouseEvent) {
-    const canvas = canvasRef.value
-    if (!canvas) return
-    const rect = canvas.getBoundingClientRect()
-    mouse.x = e.clientX - rect.left
-    mouse.y = e.clientY - rect.top
+    mouse.x = e.clientX
+    mouse.y = e.clientY
     mouse.active = true
   }
-  
+
   function onMouseLeave () {
     mouse.active = false
   }
-  
+
   let resizeObserver: ResizeObserver | null = null
-  
+
   onMounted(() => {
     resize()
     seedNodes()
     rafId = requestAnimationFrame(tick)
-  
+
+    window.addEventListener('mousemove', onMouseMove)
+    window.addEventListener('mouseleave', onMouseLeave)
+
     resizeObserver = new ResizeObserver(() => {
       resize()
       if (nodes.length === 0) seedNodes()
@@ -183,9 +181,11 @@
       resizeObserver.observe(canvasRef.value)
     }
   })
-  
+
   onUnmounted(() => {
     cancelAnimationFrame(rafId)
+    window.removeEventListener('mousemove', onMouseMove)
+    window.removeEventListener('mouseleave', onMouseLeave)
     resizeObserver?.disconnect()
   })
   </script>

@@ -12,10 +12,10 @@
         </p>
         <div class="mt-10">
           <a
-            href="mailto:contact@bastion.example"
+            href="mailto:bastion.space.solution@gmail.com"
             class="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-medium text-white transition hover:bg-blue-500"
           >
-            contact@bastion.example
+          bastion.space.solution@gmail.com
           </a>
         </div>
       </div>

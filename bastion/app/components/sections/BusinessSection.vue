@@ -1,4 +1,8 @@
 <template>
+  <section
+    id="business"
+    class="scroll-mt-20 px-4 py-20 sm:px-6 sm:py-24 lg:px-8"
+  >
 
   <div class="business-timeline">
         <div class="text-center mb-16">
@@ -79,6 +83,7 @@
       </div>
     </div>
   </div>
+</section>
 </template>
 
 <script>
