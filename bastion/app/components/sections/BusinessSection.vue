@@ -15,6 +15,13 @@
           </p>
         </div>
 
+    <div class="mt-4 mb-8 text-sm text-slate-400 max-w-2xl mx-auto bg-slate-800/30 p-3 rounded-lg">
+      <span class="font-semibold text-white">The numbers:</span> 
+      Annual revenue in millions of €. <span class="text-blue-400">Hardware</span> = one-time equipment sales. 
+      <span class="text-blue-400">Software</span> = recurring subscriptions from <span class="text-white">all satellites deployed to date</span> (past years + current year). 
+      Software share grows from 7% to 39% as our installed base expands.
+    </div>
+
 
     <div class="timeline-container" ref="timelineContainer">
       <!-- Vertical center line -->
