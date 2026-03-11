@@ -18,10 +18,17 @@
   const canvasRef = ref<HTMLCanvasElement | null>(null)
   const mouse = reactive({ x: -9999, y: -9999, active: false })
   
-  const NODE_COUNT = 250
   const CONNECTION_DIST = 160
   const MOUSE_RADIUS = 200
   const MOUSE_FORCE = 0.015
+
+  function getNodeCount () {
+    const w = window.innerWidth
+    if (w < 480) return 60
+    if (w < 768) return 100
+    if (w < 1024) return 160
+    return 250
+  }
   
   const ACCENT = { r: 13, g: 148, b: 136 }
   const PRIMARY = { r: 60, g: 80, b: 100 }
@@ -31,16 +38,19 @@
   let width = 0
   let height = 0
   
+  let nodeCount = 250
+
   function seedNodes () {
+    nodeCount = getNodeCount()
     nodes = []
-    for (let i = 0; i < NODE_COUNT; i++) {
+    for (let i = 0; i < nodeCount; i++) {
       nodes.push({
         x: Math.random() * width,
         y: Math.random() * height,
         vx: (Math.random() - 0.5) * 0.35,
         vy: (Math.random() - 0.5) * 0.35,
         radius: 1.5 + Math.random() * 1.5,
-        baseOpacity: 0.35  + Math.random() * 0.4,
+        baseOpacity: 0.35 + Math.random() * 0.4,
       })
     }
   }
@@ -175,7 +185,8 @@
 
     resizeObserver = new ResizeObserver(() => {
       resize()
-      if (nodes.length === 0) seedNodes()
+      const target = getNodeCount()
+      if (nodes.length === 0 || Math.abs(nodes.length - target) > 20) seedNodes()
     })
     if (canvasRef.value) {
       resizeObserver.observe(canvasRef.value)
